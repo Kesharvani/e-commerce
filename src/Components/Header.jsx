@@ -136,7 +136,6 @@ export default function Header() {
           </ul>
         </div>
       )}
-      <div style={{ height: "200rem", backgroundColor: "white" }}></div>
     </header>
   );
 }
