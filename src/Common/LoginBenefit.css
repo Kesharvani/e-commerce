@@ -1,0 +1,24 @@
+:root{
+    --pencil: #4a4a4a;
+}
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .list-container h3{
+    color: var(--pencil)
+  }
+  .list-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+  .list-container ul li{
+    color: var(--pencil)
+  }
+  .list-container ul li::before {
+    content: "\2713";
+  }

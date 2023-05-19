@@ -19,7 +19,7 @@ export const Login = () => {
               <span>remain signed in</span>
             </div>
             <div>
-              <Link>forget Password</Link>
+              <Link id='link-text'>forget Password</Link>
             </div>
           </div>
           <button className="login-btn">Login</button>

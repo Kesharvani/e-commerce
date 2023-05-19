@@ -1,3 +1,4 @@
+import './LoginBenefit.css'
 export const LoginBenefit = () => {
     return (
       <div className="list-container">
