@@ -1,5 +1,6 @@
 :root {
   --pencil: #4a4a4a;
+  --dark-blue: #00005f;
 }
 .filter-container * {
   color: var(--pencil);
@@ -14,6 +15,13 @@
 .label-btn-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+#clr-btn{
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 0.3rem;
+  cursor: pointer;
 }
 .price {
   display: flex;
@@ -24,6 +32,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.price-range label{
+  font-weight: bold;
 }
 .categories {
   display: flex;
@@ -37,4 +48,9 @@
 }
 input{
     margin-right: 0.5rem;
+}
+@media(min-width:769px){
+  .hamburger-filter-btn{
+    display: none;
+  }
 }

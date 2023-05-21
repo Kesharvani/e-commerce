@@ -4,7 +4,7 @@ const Filter = () => {
     <div className="filter-container">
       <div className="label-btn-container">
         <strong>Filter</strong>
-        <button>Clear</button>
+        <button id="clr-btn">Clear</button>
       </div>
       <div className="price">
         <strong>Price</strong>
@@ -18,8 +18,13 @@ const Filter = () => {
         </label>
       </div>
       <div className="price-range">
-        <label for="temp">Price Range</label>
-        <input type="range" id="temp" name="temp" list="markers" />
+        <label for="price-range">Price Range</label>
+        <input
+          type="range"
+          id="price-range"
+          name="price-range"
+          list="markers"
+        />
         <datalist id="markers">
           <option value="0"></option>
           <option value="25"></option>
