@@ -1,7 +1,40 @@
-:root{
-    --pencil:#4a4a4a
+:root {
+  --pencil: #4a4a4a;
 }
-.filter-container *{
-    color: var(--pencil);
+.filter-container * {
+  color: var(--pencil);
 }
- 
+.filter-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.label-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input{
+    margin-right: 0.5rem;
+}
