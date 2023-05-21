@@ -5,7 +5,7 @@ const City_Store3='https://images.freeimages.com/images/large-previews/46e/red-b
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <div className="footer-sub-container">
         <div className="footer-first-line">
           <NavLink to="/">
@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="footer-copyright">
         Copyright <span className="footer-name">Shubham Kesharvani</span>
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer

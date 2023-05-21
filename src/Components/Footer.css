@@ -10,8 +10,11 @@ body {
   --pencil: #4a4a4a;
   --border: #747474;
   --grey: #e5e5e5;
+  --white: #ffffff;
 }
-
+.footer-container *{
+  color: var(--white)
+}
 .footer-container {
   color: black;
   border-top: 5px solid var(--dark-yellow);

@@ -10,10 +10,11 @@ import {
   faCartPlus,
   faBars,
   faTimes,
-  faUser
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-const City_Store2='https://images.freeimages.com/images/large-previews/46e/red-beetle-1416148.jpg'
+const City_Store2 =
+  "https://images.freeimages.com/images/large-previews/46e/red-beetle-1416148.jpg";
 export default function Header() {
   const [showLoginDetails, setLoginDetails] = useState(false);
   const [searchInputEnabled, setSearchInputEnabled] = useState(false);

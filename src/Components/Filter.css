@@ -1,0 +1,7 @@
+:root{
+    --pencil:#4a4a4a
+}
+.filter-container *{
+    color: var(--pencil);
+}
+ 
