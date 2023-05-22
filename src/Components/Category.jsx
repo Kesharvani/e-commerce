@@ -9,19 +9,19 @@ const bookImage =
 const Category = () => {
   return (
     <div className="category-container">
-      <section className="card">
+      <section className="category-card">
         <Link to="/landing">
           <img src={foodImage} alt="foodImage" />
         </Link>
         <strong>Food</strong>
       </section>
-      <section className="card">
+      <section className="category-card">
         <Link to="/landing">
           <img src={clothesImage} alt="foodImage" />
         </Link>
         <strong>Clothes</strong>
       </section>
-      <section className="card">
+      <section className="category-card">
         <Link to="/landing">
           <img src={bookImage} alt="foodImage" />
         </Link>
