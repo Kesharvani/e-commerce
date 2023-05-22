@@ -3,14 +3,14 @@
   --dark-blue: #00005f;
 }
 .filter-container * {
-  color: var(--pencil);
+  color: var(--pencil)
 }
 .filter-container {
-  width: 200px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
+  background-color: white;
 }
 .label-btn-container {
   display: flex;
@@ -49,8 +49,25 @@
 input{
     margin-right: 0.5rem;
 }
+.filter-hamburger{
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.filter-container-display{
+  display: none;
+}
 @media(min-width:769px){
-  .hamburger-filter-btn{
+  .filter-hamburger{
     display: none;
+  }
+  .filter-container-display{
+    display: block;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
   }
 }
