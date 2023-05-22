@@ -1,12 +1,14 @@
-import Filter from '../Components/Filter'
-import Footer from '../Components/Footer'
-const Home=()=>{
-    return (
-        <>
-        <div style={{margin:'0px'}}>this is home page</div>
-        <Filter/>
+import Footer from "../Components/Footer";
+import Category from "../Components/Category";
+import "./Home.css";
+const Home = () => {
+  return (
+    <>
+      <div>
+        <Category />
         <Footer />
-        </>
-    )
-}
+      </div>
+    </>
+  );
+};
 export default Home;

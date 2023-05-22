@@ -20,7 +20,6 @@ body {
   border-top: 5px solid var(--dark-yellow);
   background-color: var(--light-blue);
   text-align: start;
-  position: relative;
   bottom: 0;
   width: 100%;
   margin-top: 2.5rem;

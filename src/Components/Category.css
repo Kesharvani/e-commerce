@@ -1,0 +1,17 @@
+.category-container *{
+    color: black;
+}
+.category-container{
+    display: flex;
+    padding: 1rem;
+    gap: 0.6rem;
+}
+.card{
+    flex: 1 1 0%;
+    height: 18rem;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
