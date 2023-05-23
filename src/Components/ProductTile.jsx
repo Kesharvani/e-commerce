@@ -2,9 +2,9 @@ import "./ProductTile.css";
 const ProductTile = ({ item }) => {
   return (
     <div className="card">
-      <img src={item.image} alt="" />
+      <img src={item.thumbnail} alt={`productImage${item.title}`} />
       <h3>{item.title}</h3>
-      <p>{item.type}</p>
+      <p>{item.category}</p>
     </div>
   );
 };

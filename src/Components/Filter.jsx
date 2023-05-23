@@ -54,11 +54,11 @@ const Filter = () => {
           </label>
           <label htmlFor="">
             <input type="checkbox" />
-            Clothes
+            Fashion
           </label>
           <label htmlFor="">
             <input type="checkbox" />
-            Food
+            Groceries
           </label>
         </div>
         <div className="rating">
