@@ -8,20 +8,26 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "fiction",
+    categoryName: "book",
     description:
-      "literature in the form of prose, especially novels, that describes imaginary events and people",
+      "A book is a medium for recording information in the form of writing or images, typically composed of many pages.",
   },
   {
     _id: uuid(),
-    categoryName: "non-fiction",
+    categoryName: "fashion",
     description:
-      "Non-fiction is writing that gives information or describes real events, rather than telling a story.",
+      "Fashion is a form of self-expression and autonomy at a particular period and place and in a specific context, of clothing, footwear, lifestyle, accessories, makeup, hairstyle, and body posture.",
   },
   {
     _id: uuid(),
-    categoryName: "horror",
+    categoryName: "home-appliances",
     description:
-      "Meant to cause discomfort and fear for both the character and readers, horror writers often make use of supernatural and paranormal elements in morbid stories that are sometimes a little too realistic.",
+      "Household appliance, is a machine which assists in household functions such as cooking, cleaning and food preservation..",
+  },
+  {
+    _id: uuid(),
+    categoryName: "groceries",
+    description:
+      "Groceries are foods you buy at a grocer's or at a supermarket such as flour, sugar, and tinned foods.",
   },
 ];
