@@ -1,10 +1,10 @@
 import "./LandingPage.css";
-import Filter from "../Components/Filter";
-import Footer from "../Components/Footer";
-import ProductTile from "../Components/ProductTile";
-import { useProduct } from "../Contexts/ProductContext";
+import Filter from "../../Components/Filter";
+import Footer from "../../Components/Footer";
+import ProductTile from "../../Components/ProductTile";
+import { useProduct } from "../../Contexts/ProductContext";
 
-const LandingPage = () => {
+export const LandingPage = () => {
   const {
     state: { product },
   } = useProduct();
@@ -23,4 +23,3 @@ const LandingPage = () => {
     </div>
   );
 };
-export default LandingPage;

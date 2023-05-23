@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import MockAPI from "./MockBee";
-import Home from "./Pages/Home";
-import Wishlist from "./Pages/Wishlist";
-import Cart from "./Pages/Cart";
-import LandingPage from "./Pages/LandingPage";
-import LoginRegister from "./Pages/LoginRegister";
-import IndividualPage from "./Pages/IndividualPage";
+import { Home } from "./Pages/index";
+import { Wishlist } from "./Pages/index";
+import { Cart } from "./Pages/index";
+import { LandingPage } from "./Pages/index";
+import { LoginRegister } from "./Pages/index";
+import { IndividualPage } from "./Pages/index";
 export const Router = () => {
   return (
     <div>
