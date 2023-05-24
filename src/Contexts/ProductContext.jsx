@@ -2,14 +2,20 @@ import { useReducer, useEffect, createContext, useContext } from "react";
 
 import { ACTION_TYPE } from "../Utils/index.js";
 import { initial, productReducer } from "../Reducer/ProductReducer";
+import { productService } from "../Services/product/productService.js";
 export const productProvider = createContext();
 export const ProductContext = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initial);
   const getProduct = async () => {
     try {
-      const response = await fetch("/api/products");
-      const response2 = await response.json();
-      dispatch({ type: ACTION_TYPE.SUCCESS, payload: response2.products });
+      const {
+        data: { products },
+        status,
+      } = await productService();
+      console.log(products);
+      if (status === 200) {
+        dispatch({ type: ACTION_TYPE.SUCCESS, payload: products });
+      }
     } catch (error) {
       console.error(error);
     }

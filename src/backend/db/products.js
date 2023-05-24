@@ -7,7 +7,7 @@ import { v4 as uuid } from "uuid";
 
 export const products = [
   {
-    _id: uuid(),
+    id: uuid(),
     price: 78,
     author: "Hans Christian Andersen",
     country: "Denmark",
@@ -21,7 +21,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 878,
     author: "Jorge Luis Borges",
     country: "Argentina",
@@ -35,7 +35,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 85,
     author: "Miguel de Cervantes",
     country: "Spain",
@@ -49,7 +49,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 698,
     author: "Alfred D\u00f6blin",
     country: "Germany",
@@ -62,7 +62,7 @@ export const products = [
     category: "book",
   },
   {
-    _id: uuid(),
+    id: uuid(),
     price: 328,
     author: "Fyodor Dostoevsky",
     country: "Russia",
@@ -76,7 +76,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 398,
     author: "William Faulkner",
     country: "United States",
@@ -90,7 +90,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 768,
     author: "Johann Wolfgang von Goethe",
     country: "Saxe-Weimar",
@@ -103,7 +103,7 @@ export const products = [
     category: "book",
   },
   {
-    _id: uuid(),
+    id: uuid(),
     price: 978,
     author: "Nikolai Gogol",
     country: "Russia",
@@ -117,7 +117,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 528,
     author: "Henrik Ibsen",
     country: "Norway",
@@ -131,7 +131,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 998,
     author: "Lu Xun",
     country: "China",
@@ -144,7 +144,7 @@ export const products = [
     category: "book",
   },
   {
-    _id: uuid(),
+    id: uuid(),
     price: 458,
     author: "Naguib Mahfouz",
     country: "Egypt",
@@ -157,7 +157,7 @@ export const products = [
     category: "book",
   },
   {
-    _id: uuid(),
+    id: uuid(),
     price: 428,
     author: "Thomas Mann",
     country: "Germany",
@@ -171,7 +171,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 888,
     author: "Michel de Montaigne",
     country: "France",
@@ -185,7 +185,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 999,
     author: "Toni Morrison",
     country: "United States",
@@ -199,7 +199,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 668,
     author: "Marcel Proust",
     country: "France",
@@ -212,7 +212,7 @@ export const products = [
     category: "book",
   },
   {
-    _id: uuid(),
+    id: uuid(),
     price: 478,
     author: "Fran\u00e7ois Rabelais",
     country: "France",
@@ -226,7 +226,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 328,
     author: "Saadi",
     country: "Persia, Persian Empire",
@@ -240,7 +240,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 448,
     author: "Jos\u00e9 Saramago",
     country: "Portugal",
@@ -254,7 +254,7 @@ export const products = [
   },
 
   {
-    _id: uuid(),
+    id: uuid(),
     price: 238,
     author: "Italo Svevo",
     country: "Italy",
@@ -267,7 +267,7 @@ export const products = [
     category: "book",
   },
   {
-    _id: uuid(),
+    id: uuid(),
     price: 128,
     author: "Leo Tolstoy",
     country: "Russia",
