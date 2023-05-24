@@ -1,5 +1,6 @@
 import { useReducer, useEffect, createContext, useContext } from "react";
 
+import { ACTION_TYPE } from "../Utils/index.js";
 import { initial, productReducer } from "../Reducer/ProductReducer";
 export const productProvider = createContext();
 export const ProductContext = ({ children }) => {
@@ -8,7 +9,7 @@ export const ProductContext = ({ children }) => {
     try {
       const response = await fetch("/api/products");
       const response2 = await response.json();
-      dispatch({ type: "SUCCESS", payload: response2.products });
+      dispatch({ type: ACTION_TYPE.SUCCESS, payload: response2.products });
     } catch (error) {
       console.error(error);
     }
