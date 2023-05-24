@@ -12,7 +12,6 @@ export const ProductContext = ({ children }) => {
         data: { products },
         status,
       } = await productService();
-      console.log(products);
       if (status === 200) {
         dispatch({ type: ACTION_TYPE.SUCCESS, payload: products });
       }
