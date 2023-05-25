@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import MockAPI from "./MockBee";
+
+import { RequireAuth } from "./Components/requireAuth/RequireAuth";
 import { Home } from "./Pages/index";
 import { Wishlist } from "./Pages/index";
 import { Cart } from "./Pages/index";
@@ -12,8 +14,24 @@ export const Router = () => {
       <Routes>
         <Route path="/mock-api" element={<MockAPI />}></Route>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/wishlist" element={<Wishlist />}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
+
+        <Route
+          path="/wishlist"
+          element={
+            <RequireAuth>
+              <Wishlist />
+            </RequireAuth>
+          }
+        ></Route>
+
+        <Route
+          path="/cart"
+          element={
+            <RequireAuth>
+              <Cart />
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/landing" element={<LandingPage />}></Route>
         <Route path="/auth" element={<LoginRegister />}></Route>
         <Route path="/individual/:id" element={<IndividualPage />}></Route>
