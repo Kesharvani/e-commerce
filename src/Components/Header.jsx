@@ -2,7 +2,9 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo_e_commerce from "../Assets/logo_e_commerce.png"
+import { useAuth } from "../Contexts/AuthContext";
+
+import logo_e_commerce from "../Assets/logo_e_commerce.png";
 
 import {
   faSearch,
@@ -13,8 +15,8 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 export default function Header() {
+  const { isLoggedin,logoutHandler } = useAuth();
   const [showLoginDetails, setLoginDetails] = useState(false);
   const [searchInputEnabled, setSearchInputEnabled] = useState(false);
   const breadcrumHandler = () => {
@@ -46,7 +48,11 @@ export default function Header() {
             <li>
               <FontAwesomeIcon icon={faUser} style={{ fontSize: "18px" }} />
               &#160;
-              <NavLink to="/auth">Login/Signup</NavLink>
+              {isLoggedin ? (
+                <button onClick={logoutHandler}>Logout</button>
+              ) : (
+                <NavLink to="/auth">Login/Signup</NavLink>
+              )}
             </li>
           </ul>
         </div>
