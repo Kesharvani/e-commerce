@@ -15,7 +15,7 @@ export const LandingPage = () => {
         <Filter />
         <div className="product-list">
           {product.map((item) => {
-            return <ProductTile item={item} key={item.id} />;
+            return <ProductTile item={item} key={item.id}/>;
           })}
         </div>
       </div>

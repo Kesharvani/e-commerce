@@ -17,7 +17,7 @@ export const addToWishlist = async (token, product, dispatch) => {
         },
       }
     );
-    if (status === 200)
+    if (status === 200 || status===201)
       dispatch({ type: ACTION_TYPE.ADD_TO_WISHLIST, payload: wishlist });
   } catch (error) {
     console.error("Error in add to wishlist service", error);

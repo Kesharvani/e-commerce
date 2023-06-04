@@ -17,7 +17,7 @@ export const addToCart = async (product, token, dispatch) => {
         },
       }
     );
-    if (status === 200) {
+    if (status === 200 || status===201) {
       dispatch({ type: ACTION_TYPE.ADD_TO_CART, payload: cart });
     }
   } catch (error) {
@@ -42,20 +42,20 @@ export const removeFromCart = async (id, token, dispatch) => {
   }
 };
 
-export const clearCart = async (cart, token, dispatch) => {
-  try {
-    for (item of cart) {
-      await axios.delete(`/api/user/cart/${item.id}`, {
-        headers: {
-          authorization: token,
-        },
-      });
-    }
-    dispatch({ type: ACTION_TYPE.CLEAR_CART });
-  } catch (error) {
-    console.error("Error in clearing the cart service", error);
-  }
-};
+// export const clearCart = async (cart, token, dispatch) => {
+//   try {
+//     for (item of cart) {
+//       await axios.delete(`/api/user/cart/${item.id}`, {
+//         headers: {
+//           authorization: token,
+//         },
+//       });
+//     }
+//     dispatch({ type: ACTION_TYPE.CLEAR_CART });
+//   } catch (error) {
+//     console.error("Error in clearing the cart service", error);
+//   }
+// };
 
 export const updateQuantityFromCart = async (
   id,
