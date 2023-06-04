@@ -1,7 +1,7 @@
 import "./Footer.css"
 import { NavLink } from "react-router-dom";
-// import City_Store3 from "../Assets/City_Store3.png";
-const City_Store3='https://images.freeimages.com/images/large-previews/46e/red-beetle-1416148.jpg'
+import logo_e_commerce from "../Assets/logo_e_commerce.png"
+
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-first-line">
           <NavLink to="/">
             <img
-              src={City_Store3}
+              src={logo_e_commerce}
               alt="store logo"
               width="70px"
               height="50px"

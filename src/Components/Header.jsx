@@ -2,7 +2,7 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import City_Store2 from "./Assets/City_Store3.png";
+import logo_e_commerce from "../Assets/logo_e_commerce.png"
 
 import {
   faSearch,
@@ -13,8 +13,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-const City_Store2 =
-  "https://images.freeimages.com/images/large-previews/46e/red-beetle-1416148.jpg";
+
 export default function Header() {
   const [showLoginDetails, setLoginDetails] = useState(false);
   const [searchInputEnabled, setSearchInputEnabled] = useState(false);
@@ -56,7 +55,7 @@ export default function Header() {
         <div className="logo-container">
           <NavLink to="/">
             <img
-              src={City_Store2}
+              src={logo_e_commerce}
               alt="store logo"
               width="70px"
               height="50px"
