@@ -25,9 +25,9 @@ const Footer = () => {
         </div>
         <div className="footer-second-line">
           <strong>Connect</strong>
-          <NavLink>Facebook</NavLink>
-          <NavLink>Instagram</NavLink>
-          <NavLink>Twitter</NavLink>
+          <NavLink to='https://www.linkedin.com/in/shubham-kesharvani-038a88129/'>LinkedIn</NavLink>
+          <NavLink to='https://www.instagram.com/kesharwani_20/'>Instagram</NavLink>
+          <NavLink to="https://twitter.com/Kesharwani2008">Twitter</NavLink>
         </div>
         <div className="footer-third-line">
           <strong>Resources</strong>
