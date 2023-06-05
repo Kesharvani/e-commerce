@@ -82,6 +82,15 @@ export const productReducer = (state, action) => {
         ...state,
         rating: action.payload,
       };
+    case ACTION_TYPE.CLEAR_FILTER:
+      return {
+        ...state,
+        searchTerm: "",
+        price: "",
+        priceRange: "",
+        categories: [],
+        rating: "",
+      };
 
     default:
       throw new Error("Error in reducer");

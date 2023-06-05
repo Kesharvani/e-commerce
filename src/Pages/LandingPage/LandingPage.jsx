@@ -30,7 +30,7 @@ export const LandingPage = () => {
       ? ratingFilter.filter((item) =>
           state.categories.some((category) => item["category"] === category)
         )
-      : priceRangeFilter;
+      : ratingFilter;
 
   // Search
   const searchFilter =

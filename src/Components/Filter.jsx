@@ -20,7 +20,12 @@ const Filter = () => {
       >
         <div className="label-btn-container">
           <strong>Filter</strong>
-          <button id="clr-btn">Clear</button>
+          <button
+            id="clr-btn"
+            onClick={() => dispatch({ type: ACTION_TYPE.CLEAR_FILTER })}
+          >
+            Clear
+          </button>
         </div>
         <div className="price">
           <strong>Price</strong>
