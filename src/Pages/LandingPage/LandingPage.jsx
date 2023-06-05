@@ -28,15 +28,24 @@ export const LandingPage = () => {
   const categoryFilter =
     state.categories.length > 0
       ? ratingFilter.filter((item) =>
-          state.categories.some((category) => item['category']===category)
+          state.categories.some((category) => item["category"] === category)
         )
       : priceRangeFilter;
+
+  // Search
+  const searchFilter =
+    state.searchTerm !== ""
+      ? categoryFilter.filter((item) =>
+          item.title.toUpperCase().includes(state.searchTerm.toUpperCase())
+        )
+      : categoryFilter;
+
   return (
     <div>
       <div className="filter-productlist-container">
         <Filter />
         <div className="product-list">
-          {categoryFilter.map((item) => {
+          {searchFilter.map((item) => {
             return <ProductTile item={item} key={item.id} />;
           })}
         </div>

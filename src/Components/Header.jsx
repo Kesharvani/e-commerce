@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAuth } from "../Contexts/AuthContext";
-
+import { ACTION_TYPE } from "../Utils";
+import { useProduct } from "../Contexts/ProductContext";
 import logo_e_commerce from "../Assets/logo_e_commerce.png";
 
 import {
@@ -16,7 +17,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
-  const { isLoggedin,logoutHandler } = useAuth();
+  const { dispatch } = useProduct();
+  const { isLoggedin, logoutHandler } = useAuth();
   const [showLoginDetails, setLoginDetails] = useState(false);
   const [searchInputEnabled, setSearchInputEnabled] = useState(false);
   const breadcrumHandler = () => {
@@ -114,6 +116,9 @@ export default function Header() {
               type="text"
               placeholder="Please Enter Text to Search"
               className="search-input"
+              onChange={(e) =>
+                dispatch({ type: ACTION_TYPE.SEARCH, payload: e.target.value })
+              }
             />
           </form>
         </div>

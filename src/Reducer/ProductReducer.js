@@ -43,6 +43,11 @@ export const productReducer = (state, action) => {
         ...state,
         wishlist: action.payload,
       };
+    case ACTION_TYPE.SEARCH:
+      return {
+        ...state,
+        searchTerm: action.payload,
+      };
     case ACTION_TYPE.HIGH_TO_LOW:
       return {
         ...state,
