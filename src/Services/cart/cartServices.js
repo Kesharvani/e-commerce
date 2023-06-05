@@ -17,7 +17,7 @@ export const addToCart = async (product, token, dispatch) => {
         },
       }
     );
-    if (status === 200 || status===201) {
+    if (status === 200 || status === 201) {
       dispatch({ type: ACTION_TYPE.ADD_TO_CART, payload: cart });
     }
   } catch (error) {
@@ -25,12 +25,12 @@ export const addToCart = async (product, token, dispatch) => {
   }
 };
 
-export const removeFromCart = async (id, token, dispatch) => {
+export const removeFromCart = async (product, token, dispatch) => {
   try {
     const {
       data: { cart },
       status,
-    } = await axios.delete(`/api/user/cart/${id}`, {
+    } = await axios.delete(`/api/user/cart/${product._id}`, {
       headers: {
         authorization: token,
       },

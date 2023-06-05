@@ -24,11 +24,11 @@ export const addToWishlist = async (token, product, dispatch) => {
   }
 };
 
-export const removeFromWishlist = async (id, token, dispatch) => {
+export const removeFromWishlist = async (product, token, dispatch) => {
   try {
     const {
       data: { wishlist },
-    } = await axios.delete(`/api/user/wishlist/${id}`, {
+    } = await axios.delete(`/api/user/wishlist/${product._id}`, {
       headers: {
         authorization: token,
       },
