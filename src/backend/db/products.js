@@ -17,6 +17,7 @@ export const products = [
     pages: 784,
     title: "Fairy tales",
     year: 1836,
+    rating: 8.06,
     category: "book",
   },
 
@@ -31,6 +32,7 @@ export const products = [
     pages: 224,
     title: "Ficciones",
     year: 1965,
+    rating: 5.96,
     category: "book",
   },
 
@@ -45,6 +47,7 @@ export const products = [
     pages: 1056,
     title: "Don Quijote De La Mancha",
     year: 1610,
+    rating: 3.96,
     category: "book",
   },
 
@@ -59,6 +62,7 @@ export const products = [
     pages: 600,
     title: "Berlin Alexanderplatz",
     year: 1929,
+    rating: 2.76,
     category: "book",
   },
   {
@@ -72,6 +76,7 @@ export const products = [
     pages: 551,
     title: "Crime and Punishment",
     year: 1866,
+    rating: 3.67,
     category: "book",
   },
 
@@ -86,6 +91,7 @@ export const products = [
     pages: 313,
     title: "Absalom, Absalom!",
     year: 1936,
+    rating: 9.9,
     category: "book",
   },
 
@@ -100,6 +106,7 @@ export const products = [
     pages: 158,
     title: "Faust",
     year: 1832,
+    rating: 6.6,
     category: "book",
   },
   {
@@ -113,6 +120,7 @@ export const products = [
     pages: 432,
     title: "Dead Souls",
     year: 1842,
+    rating: 5.26,
     category: "book",
   },
 
@@ -127,6 +135,7 @@ export const products = [
     pages: 68,
     title: "A Doll's House",
     year: 1879,
+    rating: 6.26,
     category: "book",
   },
 
@@ -141,6 +150,7 @@ export const products = [
     pages: 389,
     title: "Diary of a Madman",
     year: 1918,
+    rating: 9.26,
     category: "book",
   },
   {
@@ -154,6 +164,7 @@ export const products = [
     pages: 355,
     title: "Children of Gebelawi",
     year: 1959,
+    rating: 8.26,
     category: "book",
   },
   {
@@ -167,6 +178,7 @@ export const products = [
     pages: 736,
     title: "Buddenbrooks",
     year: 1901,
+    rating: 5.26,
     category: "book",
   },
 
@@ -181,6 +193,7 @@ export const products = [
     pages: 404,
     title: "Essays",
     year: 1595,
+    rating: 3.6,
     category: "book",
   },
 
@@ -195,6 +208,7 @@ export const products = [
     pages: 321,
     title: "Beloved",
     year: 1987,
+    rating: 4.26,
     category: "book",
   },
 
@@ -209,6 +223,7 @@ export const products = [
     pages: 2408,
     title: "In Search of Lost Time",
     year: 1920,
+    rating: 0,
     category: "book",
   },
   {
@@ -222,6 +237,7 @@ export const products = [
     pages: 623,
     title: "Gargantua and Pantagruel",
     year: 1533,
+    rating: 1.26,
     category: "book",
   },
 
@@ -236,6 +252,7 @@ export const products = [
     pages: 298,
     title: "Bostan",
     year: 1257,
+    rating: 2.26,
     category: "book",
   },
 
@@ -250,6 +267,7 @@ export const products = [
     pages: 352,
     title: "Blindness",
     year: 1995,
+    rating: 1.26,
     category: "book",
   },
 
@@ -264,6 +282,7 @@ export const products = [
     pages: 412,
     title: "Confessions of Zeno",
     year: 1923,
+    rating: 3.2,
     category: "book",
   },
   {
@@ -277,6 +296,7 @@ export const products = [
     pages: 864,
     title: "Anna Karenina",
     year: 1877,
+    rating: 3.26,
     category: "book",
   },
   {
