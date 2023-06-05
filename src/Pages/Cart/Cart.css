@@ -1,0 +1,14 @@
+.cart-productlist-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6rem;
+}
+.clr-btn{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}

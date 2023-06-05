@@ -23,6 +23,11 @@ export const productReducer = (state, action) => {
         ...state,
         cart: action.payload,
       };
+    case ACTION_TYPE.CLEAR_CART:
+      return {
+        ...state,
+        cart: [],
+      };
     case ACTION_TYPE.ADD_TO_WISHLIST:
       return {
         ...state,
