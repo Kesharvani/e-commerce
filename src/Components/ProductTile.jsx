@@ -19,6 +19,8 @@ const ProductTile = ({ item, isInCart, isInWishlist }) => {
       <img src={item.thumbnail} alt={`productImage${item.title}`} />
       <h3>{item.title}</h3>
       <p>{item.category}</p>
+      <p>{item.price}</p>
+      <p>{item?.rating}</p>
       {isInCart ? (
         <button onClick={() => removeFromCart(item, loginToken, dispatch)}>
           Remove from cart
