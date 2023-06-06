@@ -1,4 +1,10 @@
-import { useReducer, useEffect, createContext, useContext } from "react";
+import {
+  useReducer,
+  useEffect,
+  createContext,
+  useContext,
+  useState,
+} from "react";
 
 import { ACTION_TYPE } from "../Utils/index.js";
 import { initial, productReducer } from "../Reducer/ProductReducer";
@@ -6,7 +12,9 @@ import { productService } from "../Services/product/productService.js";
 export const productProvider = createContext();
 export const ProductContext = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initial);
+  const [isLoading, setIsLoading] = useState(false);
   const getProduct = async () => {
+    setIsLoading(true);
     try {
       const {
         data: { products },
@@ -17,6 +25,8 @@ export const ProductContext = ({ children }) => {
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -25,7 +35,7 @@ export const ProductContext = ({ children }) => {
   }, []);
   return (
     <div>
-      <productProvider.Provider value={{ state, dispatch }}>
+      <productProvider.Provider value={{ state, dispatch, isLoading }}>
         {children}
       </productProvider.Provider>
     </div>
