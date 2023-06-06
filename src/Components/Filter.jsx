@@ -34,6 +34,7 @@ const Filter = () => {
               type="radio"
               value="HIGH_TO_LOW"
               name="price"
+              checked={state.price === "HIGH_TO_LOW"}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.HIGH_TO_LOW,
@@ -48,6 +49,7 @@ const Filter = () => {
               type="radio"
               value="LOW_TO_HIGH"
               name="price"
+              checked={state.price === "LOW_TO_HIGH"}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.LOW_TO_HIGH,
@@ -148,6 +150,7 @@ const Filter = () => {
               type="radio"
               value="1"
               name="rating"
+              checked={state.rating === "1"}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.RATING,
@@ -162,6 +165,7 @@ const Filter = () => {
               type="radio"
               value="2"
               name="rating"
+              checked={state.rating === "2"}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.RATING,
@@ -176,6 +180,7 @@ const Filter = () => {
               type="radio"
               value="3"
               name="rating"
+              checked={state.rating === "3"}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.RATING,
@@ -190,6 +195,7 @@ const Filter = () => {
               type="radio"
               value="4"
               name="rating"
+              checked={state.rating === "4"}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.RATING,
