@@ -8,6 +8,7 @@ import {
 } from "../../Services/cart/cartServices";
 import { useAuth } from "../../Contexts/AuthContext";
 import { ACTION_TYPE } from "../../Utils";
+import { CartPrice } from "../../Components/CartPrice/CartPrice";
 export const Cart = () => {
   const {
     dispatch,
@@ -65,6 +66,10 @@ export const Cart = () => {
             );
           })}
         </div>
+        {cart.length > 0 && <div>
+          <CartPrice />
+          <button style={{color:'white',padding:'1rem'}}>Proceed to Checkout</button>
+        </div>}
       </div>
       <Footer />
     </div>

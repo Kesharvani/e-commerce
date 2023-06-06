@@ -21,7 +21,7 @@ const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
       <Link to={`/individual/${item._id}`}>
         <img src={item.thumbnail} alt={`productImage${item.title}`} />
       </Link>
-      <h3>{item.title}</h3>
+      <h3 id="title">{item.title}</h3>
       <p>{item.category}</p>
       <p>Price:{item.price}</p>
       {isInIndividualPage && <p>Rating:{item?.rating}</p>}
