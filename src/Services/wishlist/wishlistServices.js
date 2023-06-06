@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { ACTION_TYPE } from "../../Utils/Constant";
-export const addToWishlist = async (token, product, dispatch) => {
+export const addToWishlist = async (token, product, dispatch, toast) => {
   try {
     const {
       data: { wishlist },
@@ -17,14 +17,17 @@ export const addToWishlist = async (token, product, dispatch) => {
         },
       }
     );
-    if (status === 200 || status===201)
+    if (status === 200 || status === 201) {
+      toast.success("Added In Wishlist!!");
       dispatch({ type: ACTION_TYPE.ADD_TO_WISHLIST, payload: wishlist });
+    }
   } catch (error) {
+    toast.error("Something went wrong!!");
     console.error("Error in add to wishlist service", error);
   }
 };
 
-export const removeFromWishlist = async (product, token, dispatch) => {
+export const removeFromWishlist = async (product, token, dispatch, toast) => {
   try {
     const {
       data: { wishlist },
@@ -33,8 +36,10 @@ export const removeFromWishlist = async (product, token, dispatch) => {
         authorization: token,
       },
     });
+    toast.success("Removed from Wishlist!!");
     dispatch({ type: ACTION_TYPE.REMOVE_FROM_WISHLIST, payload: wishlist });
   } catch (error) {
+    toast.error("Something went wrong!!");
     console.error("Error in remove wishlist service", error);
   }
 };

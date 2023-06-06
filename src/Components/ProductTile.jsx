@@ -39,11 +39,15 @@ const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
         </button>
       )}
       {isInWishlist || wishlist?.find((data) => data._id === item._id) ? (
-        <button onClick={() => removeFromWishlist(item, loginToken, dispatch)}>
+        <button
+          onClick={() => removeFromWishlist(item, loginToken, dispatch, toast)}
+        >
           Remove from wishlist
         </button>
       ) : (
-        <button onClick={() => addToWishlist(loginToken, item, dispatch)}>
+        <button
+          onClick={() => addToWishlist(loginToken, item, dispatch, toast)}
+        >
           Add to Wishlist
         </button>
       )}
