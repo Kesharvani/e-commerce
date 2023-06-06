@@ -68,7 +68,8 @@ const Filter = () => {
             name="price-range"
             list="markers"
             max="1000"
-            defaultValue={1000}
+            min="0"
+            value={state.priceRange}
             onChange={(e) =>
               dispatch({
                 type: ACTION_TYPE.PRICE_RANGE,
