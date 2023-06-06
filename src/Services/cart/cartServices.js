@@ -1,7 +1,7 @@
 import axios from "axios";
 
 import { ACTION_TYPE } from "../../Utils/Constant";
-export const addToCart = async (product, token, dispatch) => {
+export const addToCart = async (product, token, dispatch, toast) => {
   try {
     const {
       data: { cart },
@@ -18,14 +18,16 @@ export const addToCart = async (product, token, dispatch) => {
       }
     );
     if (status === 200 || status === 201) {
+      toast.success("Added In Cart!!");
       dispatch({ type: ACTION_TYPE.ADD_TO_CART, payload: cart });
     }
   } catch (error) {
+    toast.error("Something Went Wrong !");
     console.error("Error in Add to cart service", error);
   }
 };
 
-export const removeFromCart = async (product, token, dispatch) => {
+export const removeFromCart = async (product, token, dispatch, toast) => {
   try {
     const {
       data: { cart },
@@ -35,9 +37,12 @@ export const removeFromCart = async (product, token, dispatch) => {
         authorization: token,
       },
     });
-    if (status === 200)
+    if (status === 200) {
+      toast.success("Removed from Cart!!");
       dispatch({ type: ACTION_TYPE.REMOVE_FROM_CART, payload: cart });
+    }
   } catch (error) {
+    toast.error("Something Went Wrong !");
     console.error("Error in remove from cart", error);
   }
 };
