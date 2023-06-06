@@ -2,9 +2,12 @@ import { useProduct } from "../../Contexts/ProductContext";
 import Footer from "../../Components/Footer";
 import ProductTile from "../../Components/ProductTile";
 import "./Cart.css";
-import { clearCart } from "../../Services/cart/cartServices";
+import {
+  clearCart,
+  updateQuantityFromCart,
+} from "../../Services/cart/cartServices";
 import { useAuth } from "../../Contexts/AuthContext";
-
+import { ACTION_TYPE } from "../../Utils";
 export const Cart = () => {
   const {
     dispatch,
@@ -17,14 +20,49 @@ export const Cart = () => {
         {cart.length > 0 && (
           <button
             className="clr-btn"
-            onClick={() => clearCart(cart, loginToken,dispatch)}
+            onClick={() => clearCart(cart, loginToken, dispatch)}
           >
             Clear Cart
           </button>
         )}
         <div className="product-list">
           {cart?.map((item) => {
-            return <ProductTile item={item} key={item.id} isInCart />;
+            return (
+              <div key={item._id}>
+                <ProductTile item={item} key={item._id} isInCart />
+                <div className="inc-desc-container">
+                  <button
+                    className="btn"
+                    onClick={() =>
+                      updateQuantityFromCart(
+                        item._id,
+                        loginToken,
+                        dispatch,
+                        ACTION_TYPE.INCREASE_QTY
+                      )
+                    }
+                    disabled={item.qty === 10}
+                  >
+                    +
+                  </button>
+                  <p>QTY:{item.qty}</p>
+                  <button
+                    className="btn"
+                    onClick={() =>
+                      updateQuantityFromCart(
+                        item._id,
+                        loginToken,
+                        dispatch,
+                        "DECREASE_QTY"
+                      )
+                    }
+                    disabled={item.qty <= 1}
+                  >
+                    -
+                  </button>
+                </div>
+              </div>
+            );
           })}
         </div>
       </div>

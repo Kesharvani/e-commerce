@@ -90,6 +90,11 @@ export const productReducer = (state, action) => {
         categories: [],
         rating: "",
       };
+    case ACTION_TYPE.UPDATE_QTY_CART:
+      return {
+        ...state,
+        cart: action.payload,
+      };
 
     default:
       throw new Error("Error in reducer");
