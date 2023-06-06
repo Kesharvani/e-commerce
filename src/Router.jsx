@@ -8,6 +8,7 @@ import { Cart } from "./Pages/index";
 import { LandingPage } from "./Pages/index";
 import { LoginRegister } from "./Pages/index";
 import { IndividualPage } from "./Pages/index";
+import { UserProfile } from "./Pages/index";
 export const Router = () => {
   return (
     <div>
@@ -35,6 +36,8 @@ export const Router = () => {
         <Route path="/landing" element={<LandingPage />}></Route>
         <Route path="/auth" element={<LoginRegister />}></Route>
         <Route path="/individual/:_id" element={<IndividualPage />}></Route>
+        <Route path="/user" element={<UserProfile />}></Route>
+
       </Routes>
     </div>
   );

@@ -36,13 +36,13 @@ export default function Header() {
           <nav className="left-top-menu">
             <ul>
               <li>
-                <NavLink>Home</NavLink>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink>about</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink>sbout</NavLink>
+                {<NavLink to={isLoggedin?"/user":'/auth'}>User profile</NavLink>}
               </li>
             </ul>
           </nav>
@@ -128,13 +128,13 @@ export default function Header() {
           <nav className="menu-bar-mobile">
             <ul>
               <li>
-                <NavLink>Home</NavLink>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink>about</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink>sbout</NavLink>
+              {<NavLink to={isLoggedin?"/user":'/auth'}>User profile</NavLink>}
               </li>
             </ul>
           </nav>
