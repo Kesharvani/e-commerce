@@ -1,4 +1,17 @@
 import { ACTION_TYPE } from "../Utils/index";
+import { v4 as uuid } from "uuid";
+export const addressData = [
+  {
+    id: uuid(),
+    name: "Shubham",
+    street: "37 Naini",
+    city: "Allahabad",
+    state: "UP",
+    country: "India",
+    zipCode: "211006",
+    mobile: "123456789",
+  },
+];
 
 export const initial = {
   product: [],
