@@ -6,7 +6,7 @@ export const initial = {
   wishlist: [],
   searchTerm: "",
   price: "",
-  priceRange: "",
+  priceRange: "1000",
   categories: [],
   rating: "",
 };
@@ -87,7 +87,7 @@ export const productReducer = (state, action) => {
         ...state,
         searchTerm: "",
         price: "",
-        priceRange: "",
+        priceRange: "1000",
         categories: [],
         rating: "",
       };

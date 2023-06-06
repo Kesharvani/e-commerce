@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useProduct } from "../Contexts/ProductContext";
 import { ACTION_TYPE } from "../Utils";
 const Filter = () => {
-  const { dispatch } = useProduct();
+  const { dispatch, state } = useProduct();
   const [toggleFilter, setToggleFilter] = useState(false);
   return (
     <div>
@@ -88,6 +88,7 @@ const Filter = () => {
             <input
               type="checkbox"
               value="book"
+              checked={state.categories.includes("book")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
@@ -101,6 +102,7 @@ const Filter = () => {
             <input
               type="checkbox"
               value="fashion"
+              checked={state.categories.includes("fashion")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
@@ -114,6 +116,7 @@ const Filter = () => {
             <input
               type="checkbox"
               value="home-appliances"
+              checked={state.categories.includes("home-appliances")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
@@ -127,6 +130,7 @@ const Filter = () => {
             <input
               type="checkbox"
               value="groceries"
+              checked={state.categories.includes("groceries")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
