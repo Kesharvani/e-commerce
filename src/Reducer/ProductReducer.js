@@ -85,7 +85,6 @@ export const productReducer = (state, action) => {
     case ACTION_TYPE.CLEAR_FILTER:
       return {
         ...state,
-        searchTerm: "",
         price: "",
         priceRange: "1000",
         categories: [],
