@@ -34,7 +34,7 @@ export const Router = () => {
         ></Route>
         <Route path="/landing" element={<LandingPage />}></Route>
         <Route path="/auth" element={<LoginRegister />}></Route>
-        <Route path="/individual/:id" element={<IndividualPage />}></Route>
+        <Route path="/individual/:_id" element={<IndividualPage />}></Route>
       </Routes>
     </div>
   );

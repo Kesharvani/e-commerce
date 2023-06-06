@@ -6,8 +6,8 @@ import {
 } from "../Services/wishlist/wishlistServices";
 import { useAuth } from "../Contexts/AuthContext";
 import { useProduct } from "../Contexts/ProductContext";
-import { useNavigate } from "react-router-dom";
-const ProductTile = ({ item, isInCart, isInWishlist }) => {
+import { useNavigate, Link } from "react-router-dom";
+const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
   const navigate = useNavigate();
   const { loginToken } = useAuth();
   const {
@@ -17,11 +17,13 @@ const ProductTile = ({ item, isInCart, isInWishlist }) => {
 
   return (
     <div className="card">
-      <img src={item.thumbnail} alt={`productImage${item.title}`} />
+      <Link to={`/individual/${item._id}`}>
+        <img src={item.thumbnail} alt={`productImage${item.title}`} />
+      </Link>
       <h3>{item.title}</h3>
       <p>{item.category}</p>
-      <p>{item.price}</p>
-      <p>{item?.rating}</p>
+      <p>Price:{item.price}</p>
+      {isInIndividualPage && <p>Rating:{item?.rating}</p>}
       {isInCart ? (
         <button onClick={() => removeFromCart(item, loginToken, dispatch)}>
           Remove from cart
