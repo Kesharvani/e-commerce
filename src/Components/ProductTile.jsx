@@ -33,14 +33,13 @@ const ProductTile = ({ item, isInCart, isInWishlist }) => {
           Add to cart
         </button>
       )}
-      {isInWishlist ? (
+      {isInWishlist || wishlist?.find((data) => data._id === item._id)? (
         <button onClick={() => removeFromWishlist(item, loginToken, dispatch)}>
           Remove from wishlist
         </button>
       ) : (
         <button
           onClick={() => addToWishlist(loginToken, item, dispatch)}
-          disabled={wishlist?.find((data) => data._id === item._id)}
         >
           Add to Wishlist
         </button>
