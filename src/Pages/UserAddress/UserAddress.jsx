@@ -32,7 +32,6 @@ export const UserAddress = () => {
   };
 
   const addAddressHandler = () => {
-    console.log("inside");
     setIsAddAddress(!isaddAddress);
     setAddress((prev) => ({
       ...prev,

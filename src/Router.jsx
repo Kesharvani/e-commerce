@@ -10,6 +10,7 @@ import { LoginRegister } from "./Pages/index";
 import { IndividualPage } from "./Pages/index";
 import { UserProfile } from "./Pages/index";
 import { UserAddress } from "./Pages/index";
+import { Checkout } from "./Pages/index";
 export const Router = () => {
   return (
     <div>
@@ -39,6 +40,7 @@ export const Router = () => {
         <Route path="/individual/:_id" element={<IndividualPage />}></Route>
         <Route path="/user" element={<UserProfile />}></Route>
         <Route path="/useraddress" element={<UserAddress />}></Route>
+        <Route path="/checkout" element={<Checkout />}></Route>
       </Routes>
     </div>
   );

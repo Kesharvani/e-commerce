@@ -6,3 +6,4 @@ export { LandingPage } from "./LandingPage/LandingPage.jsx";
 export { LoginRegister } from "./LoginRegister/LoginRegister.jsx";
 export { UserProfile } from "./UserProfile/UserProfile.jsx";
 export { UserAddress } from "./UserAddress/UserAddress.jsx";
+export {Checkout} from "./Checkout/Checkout.jsx"

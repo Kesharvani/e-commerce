@@ -23,7 +23,7 @@ const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
       </Link>
       <h3 id="title">{item.title}</h3>
       <p>{item.category}</p>
-      <p>Price:{item.price}</p>
+      <p>Price:{item.price} QTY:{item.qty}</p>
       {isInIndividualPage && <p>Rating:{item?.rating}</p>}
       {isInCart ? (
         <button

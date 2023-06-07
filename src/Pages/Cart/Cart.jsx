@@ -9,7 +9,9 @@ import {
 import { useAuth } from "../../Contexts/AuthContext";
 import { ACTION_TYPE } from "../../Utils";
 import { CartPrice } from "../../Components/CartPrice/CartPrice";
+import { useNavigate } from "react-router-dom";
 export const Cart = () => {
+  const navigate = useNavigate();
   const {
     dispatch,
     state: { cart },
@@ -66,10 +68,17 @@ export const Cart = () => {
             );
           })}
         </div>
-        {cart.length > 0 && <div>
-          <CartPrice />
-          <button style={{color:'white',padding:'1rem'}}>Proceed to Checkout</button>
-        </div>}
+        {cart.length > 0 && (
+          <div>
+            <CartPrice />
+            <button
+              style={{ color: "white", padding: "1rem" }}
+              onClick={() => navigate("/checkout")}
+            >
+              Proceed to Checkout
+            </button>
+          </div>
+        )}
       </div>
       <Footer />
     </div>
