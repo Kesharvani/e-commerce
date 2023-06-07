@@ -1,11 +1,12 @@
 import "./UserAddress.css";
-import { addressData } from "../../Reducer/ProductReducer";
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { toast } from "react-hot-toast";
+import { useProduct } from "../../Contexts/ProductContext";
 export const UserAddress = () => {
+  const { setAddAddress, addAddress } = useProduct();
   const [isaddAddress, setIsAddAddress] = useState(false);
-  const [addAddress, setAddAddress] = useState(addressData);
+
   const [address, setAddress] = useState({});
 
   const handleInputField = (e, key) => {

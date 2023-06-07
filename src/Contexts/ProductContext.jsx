@@ -9,10 +9,12 @@ import {
 import { ACTION_TYPE } from "../Utils/index.js";
 import { initial, productReducer } from "../Reducer/ProductReducer";
 import { productService } from "../Services/product/productService.js";
+import { addressData } from "../Reducer/ProductReducer.js";
 export const productProvider = createContext();
 export const ProductContext = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initial);
   const [isLoading, setIsLoading] = useState(false);
+  const [addAddress, setAddAddress] = useState(addressData);
   const getProduct = async () => {
     setIsLoading(true);
     try {
@@ -35,7 +37,9 @@ export const ProductContext = ({ children }) => {
   }, []);
   return (
     <div>
-      <productProvider.Provider value={{ state, dispatch, isLoading }}>
+      <productProvider.Provider
+        value={{ state, dispatch, isLoading, setAddAddress, addAddress }}
+      >
         {children}
       </productProvider.Provider>
     </div>

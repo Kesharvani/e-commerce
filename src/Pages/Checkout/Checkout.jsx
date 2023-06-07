@@ -1,17 +1,21 @@
 import "./Checkout.css";
 import { useProduct } from "../../Contexts/ProductContext";
 import ProductTile from "../../Components/ProductTile";
-import { UserAddress } from "../UserAddress/UserAddress";
 import { CartPrice } from "../../Components/CartPrice/CartPrice";
 import { toast } from "react-hot-toast";
 export const Checkout = () => {
-  const { state } = useProduct();
+  const { state ,addAddress} = useProduct();
   return (
     <>
       <div className="confirm-order">
         {state.cart.length > 0 && (
           <button
-            style={{ color: "white", padding: "1rem", fontWeight: "bold",marginBottom:"2rem" }}
+            style={{
+              color: "white",
+              padding: "1rem",
+              fontWeight: "bold",
+              marginBottom: "2rem",
+            }}
             onClick={() =>
               toast.success("Congratulation!! Order Placed Successfully")
             }
@@ -34,8 +38,24 @@ export const Checkout = () => {
       <hr />
       <div className="address-container-checkout">
         <h2>Choose Address Here</h2>
-        <input type="radio" />
-        <UserAddress />
+        {addAddress.map((item) => {
+          return (
+            <>
+              <label htmlFor="address"></label>
+              <input type="radio" name="address" />
+
+              <div>
+                <h3>Name:{item.name}</h3>
+                <p>Street:{item?.street}</p>
+                <p>City:{item.city}</p>
+                <p>State:{item?.state}</p>
+                <p>Country:{item.country}</p>
+                <p>Zipcode:{item.zipCode}</p>
+                <p>Mobile:{item?.mobile}</p>
+              </div>
+            </>
+          );
+        })}
       </div>
     </>
   );
