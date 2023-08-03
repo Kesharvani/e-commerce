@@ -10,7 +10,7 @@ import { useAuth } from "../../Contexts/AuthContext";
 import { ACTION_TYPE } from "../../Utils";
 import { CartPrice } from "../../Components/CartPrice/CartPrice";
 import { useNavigate } from "react-router-dom";
-export const Cart = () => {
+const Cart = () => {
   const navigate = useNavigate();
   const {
     dispatch,
@@ -84,3 +84,4 @@ export const Cart = () => {
     </div>
   );
 };
+export default Cart;

@@ -2,7 +2,7 @@ import { useProduct } from "../../Contexts/ProductContext";
 import Footer from "../../Components/Footer";
 import ProductTile from "../../Components/ProductTile";
 
-export const Wishlist = () => {
+const Wishlist = () => {
   const {
     state: { wishlist },
   } = useProduct();
@@ -19,3 +19,4 @@ export const Wishlist = () => {
     </div>
   );
 };
+export default Wishlist;

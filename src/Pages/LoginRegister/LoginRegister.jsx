@@ -5,7 +5,7 @@ import { Register } from "../../Components/Register";
 import { Button } from "../../Common/Button.jsx";
 import { LoginBenefit } from "../../Common/LoginBenefit";
 import Footer from "../../Components/Footer";
-export function LoginRegister() {
+function LoginRegister() {
   const [login, setLogin] = useState(true);
   const [register, setRegister] = useState(false);
   const firstButtonHandler = () => {
@@ -58,3 +58,4 @@ export function LoginRegister() {
     </>
   );
 }
+export default LoginRegister;

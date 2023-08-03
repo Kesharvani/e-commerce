@@ -5,7 +5,7 @@ import ProductTile from "../../Components/ProductTile";
 import { useProduct } from "../../Contexts/ProductContext";
 import { ACTION_TYPE } from "../../Utils";
 import { Loader } from "../../Components/Loader/Loader";
-export const LandingPage = () => {
+const LandingPage = () => {
   const { state, isLoading } = useProduct();
   // price sort
   const priceFilter = state.product.sort((a, b) =>
@@ -60,3 +60,4 @@ export const LandingPage = () => {
     </>
   );
 };
+export default LandingPage;

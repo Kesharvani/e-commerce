@@ -1,28 +1,43 @@
 import { Routes, Route } from "react-router-dom";
 import MockAPI from "./MockBee";
+import React, { Suspense } from "react";
 
 import { RequireAuth } from "./Components/requireAuth/RequireAuth";
-import { Home } from "./Pages/index";
-import { Wishlist } from "./Pages/index";
-import { Cart } from "./Pages/index";
-import { LandingPage } from "./Pages/index";
-import { LoginRegister } from "./Pages/index";
-import { IndividualPage } from "./Pages/index";
-import { UserProfile } from "./Pages/index";
-import { UserAddress } from "./Pages/index";
-import { Checkout } from "./Pages/index";
+
+const Home = React.lazy(() => import("./Pages/Home/Home"));
+const Wishlist = React.lazy(() => import("./Pages/Wishlist/Wishlist"));
+const Cart = React.lazy(() => import("./Pages/Cart/Cart"));
+const IndividualPage = React.lazy(() =>
+  import("./Pages/IndividualPage/IndividualPage")
+);
+const LandingPage = React.lazy(() => import("./Pages/LandingPage/LandingPage"));
+const LoginRegister = React.lazy(() =>
+  import("./Pages/LoginRegister/LoginRegister")
+);
+const UserProfile = React.lazy(() => import("./Pages/UserProfile/UserProfile"));
+const UserAddress = React.lazy(() => import("./Pages/UserAddress/UserAddress"));
+const Checkout = React.lazy(() => import("./Pages/Checkout/Checkout"));
 export const Router = () => {
   return (
     <div>
       <Routes>
         <Route path="/mock-api" element={<MockAPI />}></Route>
-        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<h1>something wend wrong</h1>}>
+              <Home />
+            </Suspense>
+          }
+        ></Route>
 
         <Route
           path="/wishlist"
           element={
             <RequireAuth>
-              <Wishlist />
+              <Suspense fallback={<h1>something wend wrong</h1>}>
+                <Wishlist />
+              </Suspense>
             </RequireAuth>
           }
         ></Route>
@@ -31,16 +46,60 @@ export const Router = () => {
           path="/cart"
           element={
             <RequireAuth>
-              <Cart />
+              <Suspense>
+                <Cart />
+              </Suspense>
             </RequireAuth>
           }
         ></Route>
-        <Route path="/landing" element={<LandingPage />}></Route>
-        <Route path="/auth" element={<LoginRegister />}></Route>
-        <Route path="/individual/:_id" element={<IndividualPage />}></Route>
-        <Route path="/user" element={<UserProfile />}></Route>
-        <Route path="/useraddress" element={<UserAddress />}></Route>
-        <Route path="/checkout" element={<Checkout />}></Route>
+        <Route
+          path="/landing"
+          element={
+            <Suspense>
+              <LandingPage />
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/auth"
+          element={
+            <Suspense>
+              <LoginRegister />
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/individual/:_id"
+          element={
+            <Suspense>
+              <IndividualPage />
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/user"
+          element={
+            <Suspense>
+              <UserProfile />
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/useraddress"
+          element={
+            <Suspense>
+              <UserAddress />
+            </Suspense>
+          }
+        ></Route>
+        <Route
+          path="/checkout"
+          element={
+            <Suspense>
+              <Checkout />
+            </Suspense>
+          }
+        ></Route>
       </Routes>
     </div>
   );

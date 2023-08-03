@@ -2,7 +2,7 @@ import "./UserProfile.css";
 import Footer from "../../Components/Footer";
 import { useAuth } from "../../Contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
-export const UserProfile = () => {
+const UserProfile = () => {
   const { logoutHandler } = useAuth();
   const navigate = useNavigate();
   const { user } = JSON.parse(localStorage.getItem("loginTokenItem"));
@@ -29,3 +29,4 @@ export const UserProfile = () => {
     </div>
   );
 };
+export default UserProfile;

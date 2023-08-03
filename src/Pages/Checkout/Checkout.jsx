@@ -3,8 +3,8 @@ import { useProduct } from "../../Contexts/ProductContext";
 import ProductTile from "../../Components/ProductTile";
 import { CartPrice } from "../../Components/CartPrice/CartPrice";
 import { toast } from "react-hot-toast";
-export const Checkout = () => {
-  const { state ,addAddress} = useProduct();
+const Checkout = () => {
+  const { state, addAddress } = useProduct();
   return (
     <>
       <div className="confirm-order">
@@ -60,3 +60,4 @@ export const Checkout = () => {
     </>
   );
 };
+export default Checkout;
