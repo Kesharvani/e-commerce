@@ -15,6 +15,7 @@ export const ProductContext = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initial);
   const [isLoading, setIsLoading] = useState(false);
   const [addAddress, setAddAddress] = useState(addressData);
+  const [toggleFilter, setToggleFilter] = useState(false);
   const getProduct = async () => {
     setIsLoading(true);
     try {
@@ -38,7 +39,15 @@ export const ProductContext = ({ children }) => {
   return (
     <div>
       <productProvider.Provider
-        value={{ state, dispatch, isLoading, setAddAddress, addAddress }}
+        value={{
+          state,
+          dispatch,
+          isLoading,
+          setAddAddress,
+          addAddress,
+          toggleFilter,
+          setToggleFilter,
+        }}
       >
         {children}
       </productProvider.Provider>

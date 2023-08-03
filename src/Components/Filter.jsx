@@ -1,17 +1,25 @@
 import "./Filter.css";
-import { useState } from "react";
 import { useProduct } from "../Contexts/ProductContext";
 import { ACTION_TYPE } from "../Utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 const Filter = () => {
-  const { dispatch, state } = useProduct();
-  const [toggleFilter, setToggleFilter] = useState(false);
+  const { dispatch, state, toggleFilter, setToggleFilter } = useProduct();
   return (
     <div>
       <button
         onClick={() => setToggleFilter(!toggleFilter)}
-        className="filter-hamburger"
+        className={
+          toggleFilter
+            ? "filter-hamburger finter-hamburger-height"
+            : "filter-hamburger"
+        }
       >
-        {toggleFilter ? "CloseButton" : "Hamburger"}
+        {toggleFilter ? (
+          <FontAwesomeIcon icon={faAngleDown} style={{ fontSize: "24px" }} />
+        ) : (
+          <FontAwesomeIcon icon={faAngleUp} style={{ fontSize: "24px" }} />
+        )}
       </button>
       <div
         className={
@@ -207,6 +215,12 @@ const Filter = () => {
             4 Stars & above
           </label>
         </div>
+        <button
+          className="filter-submit"
+          onClick={() => setToggleFilter((prev) => !prev)}
+        >
+          Submit
+        </button>
       </div>
     </div>
   );

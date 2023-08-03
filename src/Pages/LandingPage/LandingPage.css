@@ -1,9 +1,14 @@
 .filter-productlist-container {
   display: flex;
+  justify-content: start;
 }
 .product-list {
   display: flex;
   flex-direction: row;
   gap: 0.6rem;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.product-list-not-visible{
+  display: none;
 }

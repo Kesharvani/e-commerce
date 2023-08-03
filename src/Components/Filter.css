@@ -1,6 +1,7 @@
 :root {
   --pencil: #4a4a4a;
   --dark-blue: #00005f;
+  --light-blue: #344384;
 }
 .filter-container * {
   color: var(--pencil)
@@ -50,15 +51,31 @@ input{
     margin-right: 0.5rem;
 }
 .filter-hamburger{
-  background-color: var(--dark-blue);
+  background-color:var(--pencil);
+  width: 100%;
   color: white;
   padding: 0.3rem;
   cursor: pointer;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1
+}
+.finter-hamburger-height{
+  height: 100px;
 }
 .filter-container-display{
   display: none;
 }
+.filter-submit{
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: var(--light-blue);
+}
 @media(min-width:769px){
+  .filter-submit{
+    display: none;
+  }
   .filter-hamburger{
     display: none;
   }
