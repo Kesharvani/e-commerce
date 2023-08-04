@@ -42,7 +42,11 @@ export default function Header() {
                 <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                {<NavLink to={isLoggedin?"/user":'/auth'}>User profile</NavLink>}
+                {
+                  <NavLink to={isLoggedin ? "/user" : "/auth"}>
+                    User profile
+                  </NavLink>
+                }
               </li>
             </ul>
           </nav>
@@ -127,19 +131,23 @@ export default function Header() {
         <div className="third-line">
           <nav className="menu-bar-mobile">
             <ul>
-              <li>
+              <li onClick={() => setLoginDetails((prev) => !prev)}>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
+              <li onClick={() => setLoginDetails((prev) => !prev)}>
                 <NavLink to="/about">About</NavLink>
               </li>
-              <li>
-              {<NavLink to={isLoggedin?"/user":'/auth'}>User profile</NavLink>}
+              <li onClick={() => setLoginDetails((prev) => !prev)}>
+                {
+                  <NavLink to={isLoggedin ? "/user" : "/auth"}>
+                    User profile
+                  </NavLink>
+                }
               </li>
             </ul>
           </nav>
           <ul>
-            <li>
+            <li onClick={() => setLoginDetails((prev) => !prev)}>
               <FontAwesomeIcon icon={faUser} style={{ fontSize: "16px" }} />
               &#160;
               <NavLink to="/auth">Login/Signup</NavLink>
