@@ -42,6 +42,10 @@ html {
   position: sticky;
   width: 100%;
 }
+.logout-btn{
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
 @media (min-width: 769px) {
   .darkBlock {
     position: sticky;

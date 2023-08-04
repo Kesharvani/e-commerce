@@ -55,7 +55,9 @@ export default function Header() {
               <FontAwesomeIcon icon={faUser} style={{ fontSize: "18px" }} />
               &#160;
               {isLoggedin ? (
-                <button onClick={logoutHandler}>Logout</button>
+                <button onClick={logoutHandler} className="logout-btn">
+                  Logout
+                </button>
               ) : (
                 <NavLink to="/auth">Login/Signup</NavLink>
               )}
@@ -150,7 +152,13 @@ export default function Header() {
             <li onClick={() => setLoginDetails((prev) => !prev)}>
               <FontAwesomeIcon icon={faUser} style={{ fontSize: "16px" }} />
               &#160;
-              <NavLink to="/auth">Login/Signup</NavLink>
+              {isLoggedin ? (
+                <button onClick={logoutHandler} className="logout-btn">
+                  Logout
+                </button>
+              ) : (
+                <NavLink to="/auth">Login/Signup</NavLink>
+              )}
             </li>
           </ul>
         </div>
