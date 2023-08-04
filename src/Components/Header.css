@@ -22,6 +22,10 @@ html {
 .header *{
   color: var(--white);
 }
+.header{
+  position: sticky;
+  top: 0;
+}
 .darkBlock {
   background-color: var(--dark-blue);
   width: 100%;
@@ -76,6 +80,7 @@ html {
   }
   .second-line {
     min-height: 55px;
+    padding-bottom: 0.8rem;
   }
 }
 .second-line img {
