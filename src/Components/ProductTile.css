@@ -64,6 +64,6 @@ button:disabled {
   cursor: pointer;
   padding: 1rem 1rem;
 }
-.fill-icon-wishlist{
+.fill-icon-wishlist:hover{
   transform: scale(1.1);
 }
