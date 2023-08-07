@@ -1,0 +1,5 @@
+.fallback-wishlist{
+    text-align: center;
+    flex-grow:4;
+    min-height: 22rem;
+}
