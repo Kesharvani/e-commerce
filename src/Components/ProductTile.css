@@ -52,6 +52,9 @@ button:disabled {
   cursor: pointer;
   padding: 1rem 1rem;
 }
+.icon-wishlist:hover{
+  transform: scale(1.1);
+}
 .fill-icon-wishlist{
   color: #4a4a4a;
   position: absolute;
@@ -60,4 +63,7 @@ button:disabled {
   font-size: 24px;
   cursor: pointer;
   padding: 1rem 1rem;
+}
+.fill-icon-wishlist{
+  transform: scale(1.1);
 }
