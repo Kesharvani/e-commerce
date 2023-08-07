@@ -98,8 +98,8 @@ const Filter = () => {
           <label htmlFor="">
             <input
               type="checkbox"
-              value="book"
-              checked={state.categories.includes("book")}
+              value="Book"
+              checked={state.categories.includes("Book")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
@@ -112,8 +112,8 @@ const Filter = () => {
           <label htmlFor="">
             <input
               type="checkbox"
-              value="fashion"
-              checked={state.categories.includes("fashion")}
+              value="Fashion"
+              checked={state.categories.includes("Fashion")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
@@ -126,8 +126,8 @@ const Filter = () => {
           <label htmlFor="">
             <input
               type="checkbox"
-              value="home-appliances"
-              checked={state.categories.includes("home-appliances")}
+              value="Home-appliances"
+              checked={state.categories.includes("Home-appliances")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,
@@ -140,8 +140,8 @@ const Filter = () => {
           <label htmlFor="">
             <input
               type="checkbox"
-              value="groceries"
-              checked={state.categories.includes("groceries")}
+              value="Groceries"
+              checked={state.categories.includes("Groceries")}
               onChange={(e) =>
                 dispatch({
                   type: ACTION_TYPE.CATEGORY,

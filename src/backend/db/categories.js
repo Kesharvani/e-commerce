@@ -8,7 +8,7 @@ import { v4 as uuid } from "uuid";
 export const categories = [
   {
     _id: uuid(),
-    categoryName: "book",
+    categoryName: "Book",
     description:
       "A book is a medium for recording information in the form of writing or images, typically composed of many pages.",
     imageUrl:
@@ -16,7 +16,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "fashion",
+    categoryName: "Fashion",
     description:
       "Fashion is a form of self-expression and autonomy at a particular period and place and in a specific context, of clothing, footwear, lifestyle, accessories, makeup, hairstyle, and body posture.",
     imageUrl:
@@ -24,7 +24,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "home-appliances",
+    categoryName: "Home-appliances",
     description:
       "Household appliance, is a machine which assists in household functions such as cooking, cleaning and food preservation..",
     imageUrl:
@@ -32,7 +32,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "groceries",
+    categoryName: "Groceries",
     description:
       "Groceries are foods you buy at a grocer's or at a supermarket such as flour, sugar, and tinned foods.",
     imageUrl:

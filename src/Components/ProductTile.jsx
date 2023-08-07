@@ -20,7 +20,7 @@ const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
   } = useProduct();
 
   return (
-    <div className="card">
+    <div className={item.in_stock ? "card" : "card card-disable"}>
       <Link to={`/individual/${item._id}`}>
         <div
           style={{ backgroundImage: `url(${item.thumbnail})` }}
@@ -29,10 +29,10 @@ const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
         {/* <img src={item.thumbnail} alt={`productImage${item.title}`} /> */}
       </Link>
       <h3 id="title">{item.title}</h3>
-      <p>{item.category}</p>
-      <p>
-        Price:{item.price} QTY:{item.qty}
-      </p>
+      <div className="category-price">
+        <p>{item.category}</p>
+        <p>Price:&#8377;{item.price}</p>
+      </div>
       {isInIndividualPage && <p>Rating:{item?.rating}</p>}
       {isInCart ? (
         <button

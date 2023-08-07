@@ -18,7 +18,8 @@ export const products = [
     title: "Fairy tales",
     year: 1836,
     rating: 8.06,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -33,7 +34,8 @@ export const products = [
     title: "Ficciones",
     year: 1965,
     rating: 5.96,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -48,7 +50,8 @@ export const products = [
     title: "Don Quijote De La Mancha",
     year: 1610,
     rating: 3.96,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -63,7 +66,8 @@ export const products = [
     title: "Berlin Alexanderplatz",
     year: 1929,
     rating: 2.76,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: uuid(),
@@ -77,7 +81,8 @@ export const products = [
     title: "Crime and Punishment",
     year: 1866,
     rating: 3.67,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -92,7 +97,8 @@ export const products = [
     title: "Absalom, Absalom!",
     year: 1936,
     rating: 9.9,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -107,7 +113,8 @@ export const products = [
     title: "Faust",
     year: 1832,
     rating: 6.6,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: uuid(),
@@ -121,7 +128,8 @@ export const products = [
     title: "Dead Souls",
     year: 1842,
     rating: 5.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -136,7 +144,8 @@ export const products = [
     title: "A Doll's House",
     year: 1879,
     rating: 6.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -151,7 +160,8 @@ export const products = [
     title: "Diary of a Madman",
     year: 1918,
     rating: 9.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: uuid(),
@@ -165,7 +175,8 @@ export const products = [
     title: "Children of Gebelawi",
     year: 1959,
     rating: 8.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: uuid(),
@@ -179,7 +190,8 @@ export const products = [
     title: "Buddenbrooks",
     year: 1901,
     rating: 5.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -194,7 +206,8 @@ export const products = [
     title: "Essays",
     year: 1595,
     rating: 3.6,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -209,7 +222,8 @@ export const products = [
     title: "Beloved",
     year: 1987,
     rating: 4.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -225,7 +239,8 @@ export const products = [
     title: "In Search of Lost Time",
     year: 1920,
     rating: 0,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: uuid(),
@@ -239,7 +254,8 @@ export const products = [
     title: "Gargantua and Pantagruel",
     year: 1533,
     rating: 1.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -254,7 +270,8 @@ export const products = [
     title: "Bostan",
     year: 1257,
     rating: 2.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -269,7 +286,8 @@ export const products = [
     title: "Blindness",
     year: 1995,
     rating: 1.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
 
   {
@@ -284,7 +302,8 @@ export const products = [
     title: "Confessions of Zeno",
     year: 1923,
     rating: 3.2,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: uuid(),
@@ -298,7 +317,8 @@ export const products = [
     title: "Anna Karenina",
     year: 1877,
     rating: 3.26,
-    category: "book",
+    category: "Book",
+    in_stock: true,
   },
   {
     _id: "28115d14-1d26-4976-a89f-7e45690edba4",
@@ -310,7 +330,7 @@ export const products = [
     rating: 3.26,
     stock: 65,
     brand: "Impression of Acqua Di Gio",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/11/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/11/1.jpg",
@@ -331,7 +351,7 @@ export const products = [
     rating: 4,
     stock: 52,
     brand: "Royal_Mirage",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/12/1.jpg",
@@ -354,7 +374,7 @@ export const products = [
     rating: 4.59,
     stock: 61,
     brand: "Fog Scent Xpressio",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/13/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/13/1.jpg",
@@ -377,7 +397,7 @@ export const products = [
     rating: 4.21,
     stock: 114,
     brand: "Al Munakh",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/14/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/14/1.jpg",
@@ -399,7 +419,7 @@ export const products = [
     rating: 4.7,
     stock: 105,
     brand: "Lord - Al-Rehab",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/15/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/15/1.jpg",
@@ -422,7 +442,7 @@ export const products = [
     rating: 3.83,
     stock: 110,
     brand: "L'Oreal Paris",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/16/1.png",
@@ -445,7 +465,7 @@ export const products = [
     rating: 4.52,
     stock: 78,
     brand: "Hemani Tea",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/17/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/17/1.jpg",
@@ -467,7 +487,7 @@ export const products = [
     rating: 4.56,
     stock: 88,
     brand: "Dermive",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/18/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/18/1.jpg",
@@ -490,7 +510,7 @@ export const products = [
     rating: 3.42,
     stock: 54,
     brand: "ROREC White Rice",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/19/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/19/1.jpg",
@@ -512,7 +532,7 @@ export const products = [
     rating: 4.06,
     stock: 140,
     brand: "Fair & Clear",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/20/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/20/1.jpg",
@@ -534,7 +554,7 @@ export const products = [
     rating: 4.44,
     stock: 133,
     brand: "Saaf & Khaas",
-    category: "groceries",
+    category: "Groceries",
     thumbnail: "https://i.dummyjson.com/data/products/21/thumbnail.png",
     images: [
       "https://i.dummyjson.com/data/products/21/1.png",
@@ -554,7 +574,7 @@ export const products = [
     rating: 3.57,
     stock: 146,
     brand: "Bake Parlor Big",
-    category: "groceries",
+    category: "Groceries",
     thumbnail: "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/22/1.jpg",
@@ -575,7 +595,7 @@ export const products = [
     rating: 2.85,
     stock: 26,
     brand: "Baking Food Items",
-    category: "groceries",
+    category: "Groceries",
     thumbnail: "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/23/1.jpg",
@@ -598,7 +618,7 @@ export const products = [
     rating: 3.94,
     stock: 113,
     brand: "fauji",
-    category: "groceries",
+    category: "Groceries",
     thumbnail: "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/24/1.jpg",
@@ -620,7 +640,7 @@ export const products = [
     rating: 4.87,
     stock: 47,
     brand: "Dry Rose",
-    category: "groceries",
+    category: "Groceries",
     thumbnail: "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/25/1.png",
@@ -643,7 +663,7 @@ export const products = [
     rating: 3.08,
     stock: 0,
     brand: "Boho Decor",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/26/1.jpg",
@@ -667,7 +687,7 @@ export const products = [
     rating: 3.41,
     stock: 17,
     brand: "Flying Wooden",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/27/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/27/1.jpg",
@@ -690,7 +710,7 @@ export const products = [
     rating: 4.82,
     stock: 54,
     brand: "LED Lights",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/28/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/28/1.jpg",
@@ -713,7 +733,7 @@ export const products = [
     rating: 4.44,
     stock: 7,
     brand: "luxury palace",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/29/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/29/1.jpg",
@@ -736,7 +756,7 @@ export const products = [
     rating: 4.9,
     stock: 54,
     brand: "Golden",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/30/1.jpg",
@@ -758,7 +778,7 @@ export const products = [
     rating: 2.16,
     stock: 140,
     brand: "Furniture Bed Set",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/31/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/31/1.jpg",
@@ -781,7 +801,7 @@ export const products = [
     rating: 4.74,
     stock: 30,
     brand: "Ratttan Outdoor",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/32/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/32/1.jpg",
@@ -803,7 +823,7 @@ export const products = [
     rating: 3.31,
     stock: 106,
     brand: "Kitchen Shelf",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/33/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/33/1.jpg",
@@ -826,7 +846,7 @@ export const products = [
     rating: 4.01,
     stock: 136,
     brand: "Multi Purpose",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/34/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/34/1.jpg",
@@ -849,7 +869,7 @@ export const products = [
     rating: 4.06,
     stock: 68,
     brand: "AmnaMart",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/35/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/35/1.jpg",
@@ -872,7 +892,7 @@ export const products = [
     rating: 4.26,
     stock: 39,
     brand: "Professional Wear",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/36/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/36/1.jpg",
@@ -895,7 +915,7 @@ export const products = [
     rating: 3.52,
     stock: 107,
     brand: "Soft Cotton",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/37/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/37/1.jpg",
@@ -917,7 +937,7 @@ export const products = [
     rating: 3.8,
     stock: 20,
     brand: "Soft Cotton",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/38/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/38/1.png",
@@ -939,7 +959,7 @@ export const products = [
     rating: 4.55,
     stock: 0,
     brand: "Top Sweater",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/39/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/39/1.jpg",
@@ -962,7 +982,7 @@ export const products = [
     rating: 4.65,
     stock: 21,
     brand: "RED MICKY MOUSE..",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/41/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/41/1.jpg",
@@ -985,7 +1005,7 @@ export const products = [
     rating: 4.05,
     stock: 148,
     brand: "Digital Printed",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/42/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/42/1.png",
@@ -1008,7 +1028,7 @@ export const products = [
     rating: 4.31,
     stock: 150,
     brand: "Ghazi Fabric",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/43/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/43/1.jpg",
@@ -1031,7 +1051,7 @@ export const products = [
     rating: 4.03,
     stock: 2,
     brand: "Ghazi Fabric",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/44/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/44/1.jpg",
@@ -1054,7 +1074,7 @@ export const products = [
     rating: 3.67,
     stock: 96,
     brand: "IELGY",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/45/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/45/1.jpg",
@@ -1077,7 +1097,7 @@ export const products = [
     rating: 4.14,
     stock: 72,
     brand: "IELGY fashion",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/46/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/46/1.webp",
@@ -1100,7 +1120,7 @@ export const products = [
     rating: 4.19,
     stock: 50,
     brand: "Synthetic Leather",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/47/thumbnail.jpeg",
     images: [
       "https://i.dummyjson.com/data/products/47/1.jpg",
@@ -1122,7 +1142,7 @@ export const products = [
     rating: 4.02,
     stock: 25,
     brand: "Sandals Flip Flops",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/48/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/48/1.jpg",
@@ -1145,7 +1165,7 @@ export const products = [
     rating: 4.12,
     stock: 107,
     brand: "Maasai Sandals",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/49/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/49/1.jpg",
@@ -1167,7 +1187,7 @@ export const products = [
     rating: 4.33,
     stock: 46,
     brand: "Arrivals Genuine",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/50/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/50/1.jpeg",
@@ -1188,7 +1208,7 @@ export const products = [
     rating: 4.26,
     stock: 132,
     brand: "Vintage Apparel",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/51/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/51/1.png",
@@ -1210,7 +1230,7 @@ export const products = [
     rating: 1.52,
     stock: 0,
     brand: "FREE FIRE",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/52/1.png",
@@ -1232,7 +1252,7 @@ export const products = [
     rating: 2.89,
     stock: 6,
     brand: "Vintage Apparel",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/53/1.webp",
@@ -1255,7 +1275,7 @@ export const products = [
     rating: 3.62,
     stock: 136,
     brand: "The Warehouse",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/54/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/54/1.jpg",
@@ -1277,7 +1297,7 @@ export const products = [
     rating: 3.9,
     stock: 122,
     brand: "The Warehouse",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/55/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/55/1.jpg",
@@ -1300,7 +1320,7 @@ export const products = [
     rating: 3.38,
     stock: 6,
     brand: "Sneakers",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/56/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/56/1.jpg",
@@ -1324,7 +1344,7 @@ export const products = [
     rating: 3.91,
     stock: 20,
     brand: "Rubber",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/57/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/57/1.jpg",
@@ -1347,7 +1367,7 @@ export const products = [
     rating: 4.41,
     stock: 68,
     brand: "The Warehouse",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/58/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/58/1.jpg",
@@ -1370,7 +1390,7 @@ export const products = [
     rating: 4.33,
     stock: 137,
     brand: "Sneakers",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/59/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/59/1.jpg",
@@ -1393,7 +1413,7 @@ export const products = [
     rating: 4.55,
     stock: 129,
     brand: "Sneakers",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/60/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/60/1.jpg",
@@ -1414,7 +1434,7 @@ export const products = [
     rating: 4.63,
     stock: 91,
     brand: "Naviforce",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/61/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/61/1.jpg",
@@ -1435,7 +1455,7 @@ export const products = [
     rating: 4.05,
     stock: 95,
     brand: "SKMEI 9117",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/62/1.jpg",
@@ -1455,7 +1475,7 @@ export const products = [
     rating: 2.89,
     stock: 142,
     brand: "SKMEI 9117",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/63/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/63/1.jpg",
@@ -1477,7 +1497,7 @@ export const products = [
     rating: 3.98,
     stock: 61,
     brand: "Strap Skeleton",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/64/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/64/1.jpg",
@@ -1499,7 +1519,7 @@ export const products = [
     rating: 2.79,
     stock: 0,
     brand: "Stainless",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/65/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/65/1.jpg",
@@ -1521,7 +1541,7 @@ export const products = [
     rating: 3.79,
     stock: 24,
     brand: "Eastern Watches",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/66/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/66/1.jpg",
@@ -1544,7 +1564,7 @@ export const products = [
     rating: 4.03,
     stock: 46,
     brand: "Eastern Watches",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/67/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/67/1.jpg",
@@ -1567,7 +1587,7 @@ export const products = [
     rating: 3.55,
     stock: 77,
     brand: "Luxury Digital",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/68/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/68/1.jpg",
@@ -1587,7 +1607,7 @@ export const products = [
     rating: 3.77,
     stock: 89,
     brand: "Watch Pearls",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/69/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/69/1.jpg",
@@ -1610,7 +1630,7 @@ export const products = [
     rating: 2.08,
     stock: 111,
     brand: "Bracelet",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/70/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/70/1.jpg",
@@ -1631,7 +1651,7 @@ export const products = [
     rating: 3.71,
     stock: 17,
     brand: "LouisWill",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/71/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/71/1.jpg",
@@ -1653,7 +1673,7 @@ export const products = [
     rating: 2.91,
     stock: 27,
     brand: "LouisWill",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/72/thumbnail.webp",
     images: [
       "https://i.dummyjson.com/data/products/72/1.jpg",
@@ -1676,7 +1696,7 @@ export const products = [
     rating: 4.18,
     stock: 101,
     brand: "Bracelet",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/73/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/73/1.jpg",
@@ -1698,7 +1718,7 @@ export const products = [
     rating: 4.01,
     stock: 43,
     brand: "Copenhagen Luxe",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/74/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/74/1.jpg",
@@ -1721,7 +1741,7 @@ export const products = [
     rating: 3.93,
     stock: 13,
     brand: "Steal Frame",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/75/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/75/1.jpg",
@@ -1743,7 +1763,7 @@ export const products = [
     rating: 3.61,
     stock: 51,
     brand: "Darojay",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/76/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/76/1.jpg",
@@ -1764,7 +1784,7 @@ export const products = [
     rating: 1.21,
     stock: 149,
     brand: "Copenhagen Luxe",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/77/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/77/1.jpg",
@@ -1786,7 +1806,7 @@ export const products = [
     rating: 3.69,
     stock: 0,
     brand: "Fashion Jewellery",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
     images: ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"],
     trending: true,
@@ -1803,7 +1823,7 @@ export const products = [
     rating: 4.74,
     stock: 16,
     brand: "Fashion Jewellery",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
     images: ["https://i.dummyjson.com/data/products/79/1.jpg"],
     trending: false,
@@ -1820,7 +1840,7 @@ export const products = [
     rating: 4.59,
     stock: 9,
     brand: "Cuff Butterfly",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/80/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/80/1.jpg",
@@ -1843,7 +1863,7 @@ export const products = [
     rating: 3.94,
     stock: 78,
     brand: "Designer Sun Glasses",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/81/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/81/1.jpg",
@@ -1866,7 +1886,7 @@ export const products = [
     rating: 3.62,
     stock: 78,
     brand: "Designer Sun Glasses",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/82/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/82/1.jpg",
@@ -1889,7 +1909,7 @@ export const products = [
     rating: 3.97,
     stock: 115,
     brand: "mastar watch",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/83/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/83/1.jpg",
@@ -1912,7 +1932,7 @@ export const products = [
     rating: 3.64,
     stock: 64,
     brand: "mastar watch",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/84/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/84/1.jpg",
@@ -1933,7 +1953,7 @@ export const products = [
     rating: 4.98,
     stock: 92,
     brand: "LouisWill",
-    category: "fashion",
+    category: "Fashion",
     thumbnail: "https://i.dummyjson.com/data/products/85/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/85/1.jpg",
@@ -1955,7 +1975,7 @@ export const products = [
     rating: 3.83,
     stock: 96,
     brand: "lightingbrilliance",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/96/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/96/1.jpg",
@@ -1978,7 +1998,7 @@ export const products = [
     rating: 2.93,
     stock: 146,
     brand: "Ifei Home",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/97/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/97/1.jpg",
@@ -2001,7 +2021,7 @@ export const products = [
     rating: 3.99,
     stock: 44,
     brand: "DADAWU",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/98/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/98/1.jpg",
@@ -2024,7 +2044,7 @@ export const products = [
     rating: 2.32,
     stock: 138,
     brand: "Ifei Home",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/99/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/99/1.jpg",
@@ -2046,7 +2066,7 @@ export const products = [
     rating: 1.74,
     stock: 133,
     brand: "YIOSI",
-    category: "home-appliances",
+    category: "Home-appliances",
     thumbnail: "https://i.dummyjson.com/data/products/100/thumbnail.jpg",
     images: [
       "https://i.dummyjson.com/data/products/100/1.jpg",
