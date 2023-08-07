@@ -19,7 +19,7 @@ export const products = [
     year: 1836,
     rating: 8.06,
     category: "Book",
-    in_stock: true,
+    in_stock: false,
   },
 
   {
@@ -789,7 +789,7 @@ export const products = [
     ],
     trending: false,
     MRP: 40,
-    in_stock: true,
+    in_stock: false,
   },
   {
     _id: "d50c8cf3-e004-4a14-b23c-f0c6fc20677b",
@@ -1062,7 +1062,7 @@ export const products = [
     ],
     trending: false,
     MRP: 152,
-    in_stock: true,
+    in_stock: false,
   },
   {
     _id: "5048e417-8bfb-4ffc-94c3-0d24b6fe0879",
@@ -1423,7 +1423,7 @@ export const products = [
     ],
     trending: true,
     MRP: 154,
-    in_stock: true,
+    in_stock: false,
   },
   {
     _id: "5b513758-156f-43d4-a314-3d8ad9db7230",
@@ -1507,7 +1507,7 @@ export const products = [
     ],
     trending: false,
     MRP: 99,
-    in_stock: true,
+    in_stock: false,
   },
   {
     _id: "afac6c8f-8f74-4f40-bae0-6690b0656b7b",
@@ -1706,7 +1706,7 @@ export const products = [
     ],
     trending: false,
     MRP: 44,
-    in_stock: true,
+    in_stock: false,
   },
   {
     _id: "cf187ecf-3ab2-4c8b-88c7-7fab5ba523b1",
@@ -2055,7 +2055,7 @@ export const products = [
     ],
     trending: false,
     MRP: 69,
-    in_stock: true,
+    in_stock: false,
   },
   {
     _id: "9ef18b0c-a8b3-4d06-b538-4d95bed55b97",

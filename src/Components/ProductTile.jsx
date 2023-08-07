@@ -33,6 +33,7 @@ const ProductTile = ({ item, isInCart, isInWishlist, isInIndividualPage }) => {
         <p>{item.category}</p>
         <p>Price:&#8377;{item.price}</p>
       </div>
+      {!item?.in_stock && <span className="outofstock">Out Of Stock</span>}
       {isInIndividualPage && <p>Rating:{item?.rating}</p>}
       {isInCart ? (
         <button
