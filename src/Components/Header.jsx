@@ -17,7 +17,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
-  const { dispatch } = useProduct();
+  const { dispatch, state } = useProduct();
   const { isLoggedin, logoutHandler } = useAuth();
   const [showLoginDetails, setLoginDetails] = useState(false);
   const [searchInputEnabled, setSearchInputEnabled] = useState(false);
@@ -89,9 +89,10 @@ export default function Header() {
             }
             to="/wishlist"
           >
-            <div className="nav-link">
+            <div className="nav-link nav-link-wishlist">
               <FontAwesomeIcon icon={faHeart} style={{ fontSize: "23px" }} />
               <span className="text">My list</span>
+              <span className="wishlist-counter">{state.wishlist.length}</span>
             </div>
           </NavLink>
           <NavLink
