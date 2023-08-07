@@ -27,6 +27,7 @@
   color: white;
   font-weight: bold;
   width: 100%;
+  border-radius: 0.3rem;
 }
 .card button:hover {
   background-color: var(--wishlist-hover-blue);
